@@ -473,4 +473,4 @@ Question: ${inputText} [/INST]
   );
 };
 
-export default Chatbot; 
+export default Chatbot;

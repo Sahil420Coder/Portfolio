@@ -1,0 +1,91 @@
+{
+  "basic_information": {
+    "name": "Sahil",
+    "email": "sahilyadav291103@gmail.com",
+    "phone": "+91 70820 64030",
+    "github": "https://github.com/Sahil420Coder",
+    "linkedin": "https://www.linkedin.com/in/sahil-yadav-782363278/"
+  },
+  "skills": {
+    "technologies_and_frameworks": [
+      "Python",
+      "Scikit-learn",
+      "Pandas",
+      "NumPy",
+      "Matplotlib",
+      "Flask",
+      "Machine Learning",
+      "Data Analysis"
+    ],
+    "programming_languages": ["Python", "HTML", "CSS", "SQL"],
+    "areas_of_interest": [
+      "Machine Learning",
+      "Data Analysis",
+      "Natural Language Processing",
+      "Web Development"
+    ]
+  },
+  "education": [
+    {
+      "institution": "Indian Institute of Technology Ropar",
+      "degree": "Electrical Engineering",
+      "cgpa": "7.34",
+      "duration": "2022 – Present"
+    },
+    {
+      "institution": "Central Board of Secondary Education",
+      "class_xii": "88.2% (2021)",
+      "class_x": "91.6% (2019)"
+    }
+  ],
+  "projects": [
+    {
+      "name": "Analysis on Diabetes, stroke, Iris, Credit Score Datasets",
+      "description": [
+        "Implemented Logistic Regression and KNN algorithms with different k values to predict scores across multiple datasets.",
+        "Performed comprehensive data analysis and visualization to derive meaningful insights from healthcare and financial data.",
+        "Achieved high accuracy in classification tasks through careful model selection and parameter tuning."
+      ],
+      "technologies_used": ["Python", "Scikit-learn", "Pandas", "NumPy", "Matplotlib"],
+      "github_link": "https://github.com/Sahil420Coder/Analysis-on-Diabetes-stroke-Iris-Credit-Score-Datasets"
+    },
+    {
+      "name": "SMS Spam Classifier",
+      "description": [
+        "Developed a machine learning model to classify SMS messages as spam or legitimate.",
+        "Implemented text preprocessing and feature extraction techniques for optimal model performance.",
+        "Created a user-friendly interface for real-time message classification."
+      ],
+      "technologies_used": ["Python", "Natural Language Processing", "Machine Learning", "Flask"],
+      "github_link": "https://github.com/Sahil420Coder/SMS-Spam-Classifier"
+    },
+    {
+      "name": "Car Price Predictor",
+      "description": [
+        "Built a regression model to predict car prices based on various features and specifications.",
+        "Implemented data preprocessing and feature engineering to improve model accuracy.",
+        "Created a web interface for users to input car details and receive price predictions."
+      ],
+      "technologies_used": ["Python", "Machine Learning", "HTML", "Regression Analysis"],
+      "github_link": "https://github.com/Sahil420Coder/Car-Price-Predictor"
+    }
+  ],
+  "positions_of_responsibility": [
+    {
+      "title": "Technical Team Member, Innovator's Club IIT Ropar",
+      "duration": "2022 – Present",
+      "responsibilities": [
+        "Contributed to various technical initiatives and workshops to foster innovation on campus.",
+        "Helping students develop technical skills through hands-on projects."
+      ]
+    },
+    {
+      "title": "Machine Learning Enthusiast, AI/ML Club IIT Ropar",
+      "duration": "2021 – Present",
+      "responsibilities": [
+        "Participated in machine learning competitions and workshops.",
+        "Organized training sessions on data analysis and machine learning concepts."
+      ]
+    }
+  ]
+}

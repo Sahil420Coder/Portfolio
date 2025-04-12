@@ -36,7 +36,7 @@ const Skills = () => {
     {
       category: "Backend",
       items: [
-        { name: "Node.js", icon: <FaNodeJs className="text-green-400" /> },
+        { name: "Node.js", icon: <FaNode className="text-green-400" /> },
         { name: "Express", icon: <SiExpress className="text-gray-400" /> },
       ],
     },

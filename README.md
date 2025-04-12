@@ -99,3 +99,36 @@ This project is licensed under the MIT License - see the LICENSE file for detail
 - Email: sahilyadav291103@gmail.com
 - LinkedIn: [Sahil's LinkedIn](https://www.linkedin.com/in/sahil-yadav-782363278/)
 - GitHub: [Sahil420Coder](https://github.com/Sahil420Coder)
+
+## Deployment on Netlify
+
+1. **Fork or clone this repository**
+
+2. **Set up environment variables**
+   - Copy `.env.example` to a new file named `.env`
+   - Add your API keys to the `.env` file for local development
+   - Keep in mind these will NOT be pushed to GitHub due to `.gitignore`
+
+3. **Deploy to Netlify**
+   - Connect your GitHub repository to Netlify
+   - Set the build command to `npm run build`
+   - Set the publish directory to `build`
+   - Add the following environment variables in the Netlify UI:
+     - REACT_APP_GEMINI_API_KEY
+     - REACT_APP_HUGGING_FACE_TOKEN
+     - REACT_APP_GROQ_API_KEY
+
+4. **Netlify will automatically deploy your site**
+   - Any future pushes to your GitHub repository will trigger a new deployment
+
+## Local Development
+
+1. Clone the repository
+2. Run `npm install`
+3. Create a `.env` file with your API keys (see `.env.example`)
+4. Run `npm start`
+5. Open [http://localhost:3000](http://localhost:3000) in your browser
+
+## Note
+
+The chatbot will still function even without API keys by using local fallback responses, but for the best experience, it's recommended to add at least one API key.

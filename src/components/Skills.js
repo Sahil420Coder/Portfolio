@@ -66,7 +66,7 @@ const Skills = () => {
       category: "Other Skills",
       items: [
         { name: "Data Structures and Algorithms", icon: "⚙️" },
-        { name: "Competitive Programming", icon: "🏅" },
+        { name: "Data Analysis", icon: "📊" },
         { name: "Web Development", icon: "💻" },
         { name: "Machine Learning", icon: "🤖" },
       ],

@@ -1,11 +1,14 @@
 import React from "react";
 import {
-  FaReact,
-  FaNodeJs,
-  FaGitAlt,
-  FaJava,
-  FaPython,
+  FaHtml5,
+  FaCss3,
   FaJs,
+  FaReact,
+  FaNode,
+  FaPython
+} from "react-icons/fa";
+import {
+  FaGitAlt,
   FaCuttlefish,
 } from "react-icons/fa";
 import {

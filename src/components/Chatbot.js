@@ -18,15 +18,9 @@ const Chatbot = () => {
   const [input, setInput] = useState("");
   const [resumeContent, setResumeContent] = useState(null);
   const [isLoading, setIsLoading] = useState(false);
-  const [currentProvider, setCurrentProvider] = useState("local"); // local, gemini, huggingface
   const chatRef = useRef(null);
   const messagesEndRef = useRef(null);
   const inputRef = useRef(null);
-
-  // Use environment variables for API keys
-  const geminiApiKey = process.env.REACT_APP_GEMINI_API_KEY || API_KEYS.GEMINI;
-  const huggingFaceToken = process.env.REACT_APP_HUGGING_FACE_TOKEN || API_KEYS.HUGGING_FACE;
-  const groqApiKey = process.env.REACT_APP_GROQ_API_KEY || API_KEYS.GROQ;
 
   // Fetch Resume Data
   useEffect(() => {
@@ -270,7 +264,6 @@ Question: ${inputText} [/INST]
       // Try all APIs in sequence with fallback
       try {
         let response = null;
-        let provider = "local";
 
         // Try local response first
         const localResponse = getLocalResponse(input);
@@ -279,7 +272,6 @@ Question: ${inputText} [/INST]
           // Try Gemini API
           try {
             response = await callGeminiAPI(input);
-            provider = "gemini";
             console.log("Using Gemini API");
           } catch (geminiError) {
             console.log("Gemini API failed, trying Groq");
@@ -287,7 +279,6 @@ Question: ${inputText} [/INST]
             // Try Groq API
             try {
               response = await callGroqAPI(input);
-              provider = "groq";
               console.log("Using Groq API");
             } catch (groqError) {
               console.log("Groq API failed, trying Hugging Face");
@@ -295,12 +286,10 @@ Question: ${inputText} [/INST]
               // Try Hugging Face API as final fallback
               try {
                 response = await callHuggingFaceAPI(input);
-                provider = "huggingface";
                 console.log("Using Hugging Face API");
               } catch (hfError) {
                 // All APIs failed, generate a generic response
                 response = "I apologize, but I'm having trouble connecting to my knowledge base. Please try asking a simpler question or contact Sahil directly at sahilyadav291103@gmail.com";
-                provider = "local";
                 console.log("All APIs failed");
               }
             }
@@ -310,7 +299,6 @@ Question: ${inputText} [/INST]
           console.log("Using local response");
         }
 
-        setCurrentProvider(provider);
         setMessages([...newMessages, { 
           text: response || localResponse || "I'm sorry, I couldn't understand your question. Could you rephrase it?", 
           isUser: false 

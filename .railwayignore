@@ -1,0 +1,10 @@
+.git
+.env
+node_modules
+npm-debug.log
+.DS_Store
+*.pem
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local 
